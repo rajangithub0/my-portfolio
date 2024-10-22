@@ -4,18 +4,18 @@
     margin-left: 100px;
 }
 
-.home-content h1{
+.home-content h2{
     padding: 5px;
-    padding-top: 80px;
+    padding-top: 60px;
 }
 
-.home-content h2{
+.home-content h1{
     padding: 5px;
     color: lightcoral;
 }
 
 .home-buttons{
-    margin-left: 100px;
+    margin-top: 10px;
 }
 
 .home-buttons .btn-hire{

@@ -8,13 +8,13 @@ const Home = () => {
         <>
             <div className='home-container home-container'>
                 <div className='container home-content'>
-                    <h1>Hi I'm a</h1><h2><Typewriter
+                    <h2>Hi 👋 I'm a</h2><h1><Typewriter
                         options={{
                             strings: ['Full Stack Developer !', 'React js !', 'Mern Stack Developer !', 'Web Developer !'],
                             autoStart: true,
                             loop: true,
                         }}
-                    /></h2>
+                    /></h1>
                     <div className='home-buttons'>
                         <button className='btn btn-hire'>Hire Me</button>
 
