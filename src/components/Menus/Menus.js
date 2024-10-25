@@ -26,19 +26,16 @@ const Menus = ({ toggle }) => {
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <GrUserExpert /> Work Experince
+                                <FcReadingEbook /> Education
                             </div>
                         </div>
+
                         <div className='nav-item'>
                             <div className='nav-link'>
                                 <FcBiotech /> Tech Stack
                             </div>
                         </div>
-                        <div className='nav-item'>
-                            <div className='nav-link'>
-                                <FcReadingEbook /> Education
-                            </div>
-                        </div>
+
                         <div className='nav-item'>
                             <div className='nav-link'>
                                 <FcVideoProjector /> Projects
@@ -46,9 +43,14 @@ const Menus = ({ toggle }) => {
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcVoicePresentation /> Testimonial
+                                <GrUserExpert /> Work Experince
                             </div>
                         </div>
+                        {/* <div className='nav-item'>
+                            <div className='nav-link'>
+                                <FcVoicePresentation /> Testimonial
+                            </div>
+                        </div> */}
                         <div className='nav-item'>
                             <div className='nav-link'>
                                 <BiSolidUserDetail /> Contact Details
