@@ -29,7 +29,7 @@ const Project = () => {
                                 <div className='ad-title m-auto'>
                                     <h5 className='text-uppercase'>e-commerce website</h5>
                                 </div>
-                                <a className='ad-btn' href='#'>View</a>
+                                <a className='ad-btn' href='https://github.com/rajangithub0'>View</a>
                             </div>
                         </div>
                     </div>
