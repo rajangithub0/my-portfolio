@@ -2,6 +2,8 @@ import React from 'react';
 import { FcAbout, FcBiotech, FcHome, FcReadingEbook, FcVideoProjector, FcVoicePresentation } from "react-icons/fc";
 import { GrUserExpert } from "react-icons/gr";
 import { BiSolidUserDetail } from "react-icons/bi";
+import raj from '../../assets/images/Rajan.JPG'
+
 
 import "./Menus.css";
 
@@ -11,7 +13,7 @@ const Menus = ({ toggle }) => {
             {toggle ? (
                 <>
                     <div className='navbar-profile-pic'>
-                        <img src='https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg' alt='Profie pic' />
+                        <img src={raj} alt='Profie pic' />
                     </div>
                     <div className='nav-items'>
                         <div className='nav-item'>
