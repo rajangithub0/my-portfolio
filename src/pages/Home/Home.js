@@ -4,6 +4,8 @@ import Typewriter from 'typewriter-effect';
 import Resume from "../../assets/docs/Rajan.pdf";
 import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import "./home.css";
+import Fade from 'react-reveal/Fade'
+
 
 const Home = () => {
     const [theme, setTheme] = useTheme();
@@ -18,18 +20,22 @@ const Home = () => {
                     {theme === 'light' ? (<BsMoonStarsFill size={30} />) : (<BsSunFill size={30} />)}
                 </div>
                 <div className='container home-content'>
-                    <h2>Hi 👋 I'm a</h2><h1><Typewriter
-                        options={{
-                            strings: ['Full Stack Developer !', 'React js !', 'Mern Stack Developer !', 'Web Developer !'],
-                            autoStart: true,
-                            loop: true,
-                        }}
-                    /></h1>
-                    <div className='home-buttons'>
-                        <button className='btn btn-hire'>Hire Me</button>
+                    <Fade right>
+                        <h2>Hi 👋 I'm a</h2><h1><Typewriter
+                            options={{
+                                strings: ['Full Stack Developer !', 'React js !', 'Mern Stack Developer !', 'Web Developer !'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                        /></h1>
+                    </Fade>
+                    <Fade bottom>
+                        <div className='home-buttons'>
+                            <button className='btn btn-hire'>Hire Me</button>
 
-                        <a className='btn btn-cv' href={Resume} download="rajan.pdf">Resume</a>
-                    </div>
+                            <a className='btn btn-cv' href={Resume} download="rajan.pdf">Resume</a>
+                        </div>
+                    </Fade>
                 </div>
             </div>
         </>
