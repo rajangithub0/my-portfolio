@@ -28,3 +28,16 @@
     text-align: justify;
     padding: 20px;
 }
+
+
+/* dark mode */
+
+#about .about{
+    box-shadow: none;
+    background-color: cornflowerblue;
+}
+
+#dark .about-content h1{
+    color: aliceblue;   
+    border-bottom: 2px double cornsilk;  
+}

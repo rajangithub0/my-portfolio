@@ -2,9 +2,8 @@ import React from 'react';
 import { FcAbout, FcBiotech, FcHome, FcReadingEbook, FcVideoProjector, FcVoicePresentation } from "react-icons/fc";
 import { GrUserExpert } from "react-icons/gr";
 import { BiSolidUserDetail } from "react-icons/bi";
-import raj from '../../assets/images/Rajan.JPG'
-
-
+import raj from '../../assets/images/Rajan.JPG';
+import { Link } from 'react-scroll';
 import "./Menus.css";
 
 const Menus = ({ toggle }) => {
@@ -18,34 +17,67 @@ const Menus = ({ toggle }) => {
                     <div className='nav-items'>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcHome /> Home
+                                <Link to='home' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}> <FcHome />Home</Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcAbout /> About
+                                <Link to='about' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcAbout />
+                                    About
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcReadingEbook /> Education
+                                <Link to='education' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100} >
+                                    <FcReadingEbook />
+                                    Education
+                                </Link>
                             </div>
                         </div>
 
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcBiotech /> Tech Stack
+                                <Link to='techstack' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcBiotech />
+                                    Tech Stack
+                                </Link>
                             </div>
                         </div>
 
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcVideoProjector /> Projects
+                                <Link to='projects' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcVideoProjector />
+                                    Projects
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <GrUserExpert /> Work Experince
+                                <Link to='workexperince' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <GrUserExpert />
+                                    Work Experince
+                                </Link>
                             </div>
                         </div>
                         {/* <div className='nav-item'>
@@ -55,7 +87,13 @@ const Menus = ({ toggle }) => {
                         </div> */}
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <BiSolidUserDetail /> Contact Details
+                                <Link to='contactdetails' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <BiSolidUserDetail />
+                                    Contact Details
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -65,42 +103,79 @@ const Menus = ({ toggle }) => {
                     <div className='nav-items'>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcHome title='Home' />
+                                <div className='nav-link'>
+                                    <Link to='home' spy={true}
+                                        smooth={true}
+                                        offset={-50}
+                                        duration={100}>
+                                        <FcHome />
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcAbout title='About' />
+                                <Link to='about' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcAbout />
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <GrUserExpert title='Work Exprince' />
+                                <Link to='education' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100} >
+                                    <FcReadingEbook />
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcBiotech title='Tech Stack' />
+                                <Link to='techstack' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcBiotech />
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcReadingEbook title='Education' />
+                                <Link to='projects' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <FcVideoProjector />
+                                </Link>
                             </div>
                         </div>
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <FcVideoProjector title='Projects' />
+                                <Link to='workexperince' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <GrUserExpert />
+                                </Link>
                             </div>
                         </div>
-                        <div className='nav-item'>
+                        {/* <div className='nav-item'>
                             <div className='nav-link'>
                                 <FcVoicePresentation title='Testimonial' />
                             </div>
-                        </div>
+                        </div> */}
                         <div className='nav-item'>
                             <div className='nav-link'>
-                                <BiSolidUserDetail title='Contact Details' />
+                                <Link to='contactdetails' spy={true}
+                                    smooth={true}
+                                    offset={-50}
+                                    duration={100}>
+                                    <BiSolidUserDetail />
+                                </Link>
                             </div>
                         </div>
                     </div>

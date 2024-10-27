@@ -7,7 +7,7 @@ import { FaSchool } from "react-icons/fa6";
 const Education = () => {
     return (
         <>
-            <div className='container education'>
+            <div className='container education' id='education'>
                 <h2 className='col-12 mt-3 mb-1 text-center text-uppercase'>education Details</h2>
                 <hr />
                 <VerticalTimeline>

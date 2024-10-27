@@ -1,12 +1,22 @@
 import React from 'react';
+import { useTheme } from '../../context/ThemeContext';
 import Typewriter from 'typewriter-effect';
-import Resume from "../../assets/docs/Rajan.pdf"
+import Resume from "../../assets/docs/Rajan.pdf";
+import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import "./home.css";
 
 const Home = () => {
+    const [theme, setTheme] = useTheme();
+    const handleTheme = () => {
+        setTheme((prevState) => (prevState === 'light' ? 'dark' : 'light'));
+    }
     return (
+
         <>
-            <div className='home-container home-container'>
+            <div className='home-container home-container' id='home'>
+                <div className='theme-btn' onClick={handleTheme}>
+                    {theme === 'light' ? (<BsMoonStarsFill size={30} />) : (<BsSunFill size={30} />)}
+                </div>
                 <div className='container home-content'>
                     <h2>Hi 👋 I'm a</h2><h1><Typewriter
                         options={{
