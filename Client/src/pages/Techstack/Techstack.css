@@ -26,3 +26,18 @@
     font-size: 2rem;
     margin: 10px;
 }
+
+/* respons6ive design */
+
+@media (max-width:600px) {
+    .techstack{
+        margin: 0;
+        padding: 0;
+        margin-top: 20px
+    }
+
+    .techstack hr{
+        width:280px ;
+    }
+    
+}
