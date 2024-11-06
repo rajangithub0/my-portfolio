@@ -1,6 +1,7 @@
 const express = require('express')
 const cors = require('cors')
 const dotenv = require('dotenv')
+const path = require('path')
 
 //dotenv
 dotenv.config();
@@ -13,8 +14,14 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
+//static files access
+app.use(express.static(path.join(__dirname, './Client/build')))
 //routes
 app.use('/api/v1/portfolio', require('./routes/portfolioRoute'))
+
+app.get('*', function (req, res) {
+    res.sendFile(path.join(__dirname, './Client/build/index.html'))
+})
 // app.get("/", (req, res) => {
 //     res.send('<h1>welcome to node server</h1>')
 // })
