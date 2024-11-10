@@ -21,7 +21,7 @@ app.use('/api/v1/portfolio', require('./routes/portfolioRoute'))
 
 app.get('*', function (req, res) {
     res.sendFile(path.join(__dirname, './Client/build/index.html'))
-})
+});
 // app.get("/", (req, res) => {
 //     res.send('<h1>welcome to node server</h1>')
 // })
